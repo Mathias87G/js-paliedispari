@@ -4,13 +4,13 @@
 // parola utente
 var wordUser = prompt("Inserisci una parola");
 
-
 // funzione su parola utente
 reverse(wordUser);
 
 // funzione
 function reverse(word) {
   var wordReverse = '';
+  word = word.toUpperCase();
 // ciclo per invertire parola
   for (var i = word.length - 1 ; i >= 0; i--) {
     wordReverse += word[i];
